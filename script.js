@@ -18,10 +18,10 @@ function updateCountdown() {
     if (current_date_str == selected_date_str) {
         countdownElement.textContent = '¡Feliz Cumpleaños Ruben!';
     } else {
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+        const days = Math.floor(time_difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((time_difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((time_difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((time_difference % (1000 * 60)) / 1000);
 
         if (days == 1 && hours == 1 && minutes == 1 && seconds == 1) {
             countdownElement.textContent = `${days} día, ${hours} hora, ${minutes} minuto, ${seconds} segundo`;
